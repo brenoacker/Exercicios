@@ -56,5 +56,3 @@ while k < len(lista_siglas):
     k += 1
 
 print('\n')
-
-

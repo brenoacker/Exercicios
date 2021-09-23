@@ -86,3 +86,4 @@ for key in numero_socios:
 
 print(f'\n3c-\nO numero de empresas que tem mais de 2 cnaes secundarias cadastradas eh {cnaes_secundarias}.')
 print('\n')
+
