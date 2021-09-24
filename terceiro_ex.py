@@ -87,3 +87,6 @@ for key in numero_socios:
 print(f'\n3c-\nO numero de empresas que tem mais de 2 cnaes secundarias cadastradas é {cnaes_secundarias}.')
 print('\n')
 
+
+#Ideia para retornar em json:
+# json.dumps(dicionario, indent=4))
