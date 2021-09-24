@@ -73,20 +73,36 @@ while k < len(regioes):
 
     k += 1
 
+dicionario_json1 = {}
+dicionario_json2 = {}
+dicionario_json3 = {}
+
 print('\n')
 print('3a-')
 for key in numero_socios:
     print(f'A regiao {key} possui {cont_regiao[key]} CNPJs da lista.')
+    dicionario_json1[key] = cont_regiao[key]
+
+print('\n')
+json_object = json.dumps(dicionario_json1, indent=4)
+print(json_object)
 
 print('\n3b-')
 media = {}
 for key in numero_socios:
     media[key]=numero_socios[key]/cont_regiao[key]
-    print(f'A media de socios na regiao {key} é {media[key]}.')
+    print(f'A media de socios na regiao {key} eh {media[key]}.')
+    dicionario_json2[key] = media[key]
 
-print(f'\n3c-\nO numero de empresas que tem mais de 2 cnaes secundarias cadastradas é {cnaes_secundarias}.')
+print('\n')
+json_object = json.dumps(dicionario_json2, indent=4)
+print(json_object)
+
+print(f'\n3c-\nO numero de empresas que tem mais de 2 cnaes secundarias cadastradas eh {cnaes_secundarias}.')
 print('\n')
 
+dicionario_json3['numero de empresas com mais de 2 cnaes secundarias'] = cnaes_secundarias
 
-#Ideia para retornar em json:
-# json.dumps(dicionario, indent=4))
+json_object = json.dumps(dicionario_json3, indent=4)
+print(json_object)
+print('\n')
