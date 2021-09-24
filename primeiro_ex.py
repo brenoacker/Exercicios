@@ -50,3 +50,6 @@ for i in range(5):
     print(f'TOP {i+1}: O DDD {dicionario_organizado[i][0]} está presente em {dicionario_organizado[i][1]} cidades')
 
 print('\n')
+
+#Ideia para retornar em json:
+# json.dumps(dicionario, indent=4))
