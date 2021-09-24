@@ -35,8 +35,8 @@ while j < len(lista_siglas):
     j = j + 1
 
 
-print('\n')
-print('De acordo com dados do IBGE:\n')
+#print('\n')
+#print('De acordo com dados do IBGE:\n')
 
 dicionario_json = {}
 
@@ -44,18 +44,18 @@ while k < len(lista_siglas):
     var = lista_siglas[k]
 
     if uf_numeromunicipios[var] == 1:
-        print(f'{lista_siglas[k]} possui {uf_numeromunicipios[var]} município')
+        #print(f'{lista_siglas[k]} possui {uf_numeromunicipios[var]} município')
         dicionario_json[lista_siglas[k]] = uf_numeromunicipios[var]
 
     else:
-        print(f'{lista_siglas[k]} possui {uf_numeromunicipios[var]} municípios')
+        #print(f'{lista_siglas[k]} possui {uf_numeromunicipios[var]} municípios')
         dicionario_json[lista_siglas[k]] = uf_numeromunicipios[var]
 
     k += 1
 
-print('\n')
+#print('\n')
 
 json_object = json.dumps(dicionario_json, indent=4)
 print(json_object)
 
-print('\n')
+#print('\n')
