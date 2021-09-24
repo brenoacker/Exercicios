@@ -50,3 +50,6 @@ while k < len(lista_siglas):
     k += 1
 
 print('\n')
+
+#Ideia para retornar em json:
+# json.dumps(dicionario, indent=4))
