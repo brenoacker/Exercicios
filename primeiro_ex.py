@@ -46,10 +46,15 @@ print('\n')
 print('1-')
 print('\n')
 
+dicionario_json = {}
+
 for i in range(5):
+    dicionario_json[dicionario_organizado[i][0]] = dicionario_organizado[i][1]
     print(f'TOP {i+1}: O DDD {dicionario_organizado[i][0]} está presente em {dicionario_organizado[i][1]} cidades')
 
 print('\n')
 
-#Ideia para retornar em json:
-# json.dumps(dicionario, indent=4))
+json_object = json.dumps(dicionario_json, indent=4)
+print(json_object)
+
+print('\n')
